@@ -83,7 +83,7 @@ def bot(op):
     try:
         if op.type == 25:
             msg = op.message
-            if msg.text.lower() == "removesiri":
+            if msg.text.lower() == "TGremovesiri":
                 gs = cl.getGroup(msg.to)
                 sirilist = [i.mid for i in gs.members if any(word in i.displayName for word in ["Doctor.A","Eliza","Parry","Rakko","しりちゃん"])]
                 if sirilist != []:
